@@ -116,7 +116,7 @@ function ProductDetailOne() {
       <header className="  flex justify-center   h-[65%]">
         <div className="w-[25%] p-1  flex flex-col gap-y-1">
           <div className="w-[100%] h-[18%] p-1  bg-green-900"></div>
-          <div className="w-[100%]  grid grid-cols-1 gap-2 p-1   overflow-y-scroll h-[82%]">
+          <div className="w-[100%]  grid grid-cols-1 gap-2 p-1 no-scrollbar overflow-y-scroll h-[82%]">
             {ledSpotLightSeries.map((product) => (
               <div
                 key={product.id}
@@ -150,7 +150,7 @@ function ProductDetailOne() {
             <h2 className="text-xs font-semibold uppercase mb-4 text-left bg-[#F15B26] pl-3 text-white py-1.5">
               Minimalist Series
             </h2>
-            <div className="grid grid-cols-3 gap-4 px-3 overflow-y-scroll h-[83%]">
+            <div className="grid grid-cols-3 gap-4 px-3 no-scrollbar overflow-y-scroll h-[83%]">
               {minimalistSeries.map((product) => (
                 <div
                   key={product.id}
@@ -167,7 +167,7 @@ function ProductDetailOne() {
         </div>
       </header>
 
-      <main className="flex-1 mt-2 overflow-x-scroll h-[35%]">
+      <main className="flex-1 mt-2 no-scrollbar overflow-x-scroll h-[35%]">
         <section className="h-full ">
           <h2 className="text-xs font-semibold uppercase mb-4 text-left bg-[#F15B26] pl-3 text-white py-1.5">
             Photo & Video
